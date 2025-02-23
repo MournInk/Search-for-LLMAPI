@@ -1,0 +1,22 @@
+{
+    "api": {
+        // 博查 base url
+        "bocha_base_url": "https://api.bochaai.com/v1",
+        // 博查密钥
+        "bocha_secret_key": "sk-1919810",
+        // base url, 应当以 /v1 结尾
+        "base_url": "https://api.siliconflow.cn/v1",
+        // LLM 模型访问密钥
+        "secret_key": "sk-114514"
+    },
+    "auth": {
+        // 访问密码, 用于 bearer 鉴权
+        "access_password": ""
+    },
+    "server": {
+        // 服务器监听地址
+        "address": "0.0.0.0",
+        // 服务器监听端口
+        "port": 11451
+    }
+}
