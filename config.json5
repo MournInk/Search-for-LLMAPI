@@ -10,13 +10,39 @@
         "secret_key": "sk-114514"
     },
     "auth": {
-        // 访问密码, 用于 bearer 鉴权
+        // 访问密码, 用于 bearer 鉴权 - 请设置强密码
         "access_password": ""
     },
     "server": {
-        // 服务器监听地址
-        "address": "0.0.0.0",
+        // 服务器监听地址 - 建议使用 127.0.0.1 限制本地访问
+        "address": "127.0.0.1",
         // 服务器监听端口
-        "port": 11451
+        "port": 11451,
+        // 调试模式 - 生产环境请设为 false
+        "debug": false
+    },
+    "timeout": {
+        // API 请求超时时间 (秒)
+        "api_request": 30,
+        // 网页内容获取超时时间 (秒)
+        "web_fetch": 10
+    },
+    "limits": {
+        // 最大搜索问题数量
+        "max_search_questions": 3,
+        // 每个搜索结果最大页面数量
+        "max_pages_per_search": 5,
+        // 网页内容最大长度 (字符)
+        "max_content_length": 2000,
+        // 用户消息最大长度 (字符)
+        "max_message_length": 8192
+    },
+    "privacy": {
+        // 是否记录用户查询日志
+        "log_user_queries": false,
+        // 是否记录搜索结果
+        "log_search_results": false,
+        // 用户IP地址记录级别: "none", "partial", "full"
+        "ip_logging": "partial"
     }
 }
